@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://github.com/",
+  "env": {
+    "login_user": "st-e2e-tests",
+    "login_pass": "6fQ8MM4Hk4QckKe3"
+  }
+}
