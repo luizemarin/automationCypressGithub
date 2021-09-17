@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test:chrome": "cypress run --browser chrome"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/luizemarin/automationCypressGithub#readme",
   "dependencies": {
     "cypress": "^8.4.0",
+    "cypress-plugin-tab": "^1.0.5",
     "cypress-xpath": "^1.6.2"
   }
 }

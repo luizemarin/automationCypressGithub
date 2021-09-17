@@ -1,7 +1,10 @@
 {
   "baseUrl": "https://github.com/",
   "env": {
-    "login_user": "st-e2e-tests",
-    "login_pass": "6fQ8MM4Hk4QckKe3"
-  }
+    "login_user": "luizemarin@hotmail.com",
+    "login_pass": "@luizemarin123",
+    "user_github": "marinluiz"
+  },
+  "viewportWidth": 1280,
+  "viewportHeight": 660
 }
