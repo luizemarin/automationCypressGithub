@@ -41,4 +41,16 @@ describe("Delete README from the repository", () => {
 
     cy.get(".flash.mb-4").should("contain.text", textAddReadme);
   });
+
+  it("Readme not found for delete", () => {
+    cy.get(".Header-link").last().click();
+    cy.xpath(
+      "/html/body/div[1]/header/div[7]/details/details-menu/a[2]"
+    ).click();
+
+    cy.get(".d-inline-block.mb-1").should("contain.text", nameRepository);
+    cy.get(".wb-break-all").click();
+
+    cy.get(".flash.mb-4").should("contain.text", textAddReadme);
+  });
 });

@@ -17,7 +17,7 @@ describe("Delete repository from de github", () => {
     login.loginPage();
   });
 
-  it("Delete rtepository", () => {
+  it("Delete repository", () => {
     cy.get(".Header-link").last().click();
     cy.xpath(
       "/html/body/div[1]/header/div[7]/details/details-menu/a[2]"
@@ -40,5 +40,14 @@ describe("Delete repository from de github", () => {
       .type(nameUserRepository + "/" + nameRepository);
 
     cy.get(".btn-danger.btn.btn-block").last().click();
+  });
+
+  it("Repository not found for delete", () => {
+    cy.get(".Header-link").last().click();
+    cy.xpath(
+      "/html/body/div[1]/header/div[7]/details/details-menu/a[2]"
+    ).click();
+
+    cy.get(".d-inline-block.mb-1").should("not.contain.text", nameRepository);
   });
 });
